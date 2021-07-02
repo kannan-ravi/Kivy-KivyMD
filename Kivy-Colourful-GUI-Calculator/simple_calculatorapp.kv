@@ -1,0 +1,124 @@
+MainLayout:
+	
+<MainLayout>:
+	BoxLayout:
+		orientation: 'vertical'
+		size: root.width, root.height
+		TextInput:
+			id: text_input
+			halign: 'right'
+			text: '0'
+			font_size: 100
+			font_name: "Fonts/NotoSans-Regular.ttf"
+			font_color: 0,0,0,1
+			
+			
+		GridLayout:
+			rows:5
+			col:4
+			
+			Button:
+				text: 'C'
+				background_normal: 'Images/black.jpg'
+				background_down: 'Images/grey.png'
+				on_press: root.button_clear()
+			Button:
+				text: '+/-'
+				background_normal: 'Images/black.jpg'
+				background_down: 'Images/grey.png'
+				on_press:root.button_plus_minus()
+			Button:
+				text: 'del'
+				background_normal: 'Images/black.jpg'
+				background_down: 'Images/grey.png'
+				on_press:root.button_delete()
+			Button:
+				text: '÷'
+				background_normal: 'Images/violet.jpg'
+				background_down: 'Images/dark violet.jpg'
+				on_press:root.button_clicks('÷')
+				
+			Button:
+				text: '7'
+				background_normal: 'Images/black.jpg'
+				background_down: 'Images/grey.png'
+				on_press:root.button_click(7)
+			Button:
+				text: '8'
+				background_normal: 'Images/black.jpg'
+				background_down: 'Images/grey.png'
+				on_press:root.button_click(8)
+			Button:
+				text: '9'
+				background_normal: 'Images/black.jpg'
+				background_down: 'Images/grey.png'
+				on_press:root.button_click(9)
+			Button:
+				text: 'x'
+				background_normal: 'Images/violet.jpg'
+				background_down: 'Images/dark violet.jpg'
+				on_press:root.button_clicks('x')
+			
+			Button:
+				text: '4'
+				background_normal: 'Images/black.jpg'
+				background_down: 'Images/grey.png'
+				on_press:root.button_click(4)
+			Button:
+				text: '5'
+				background_normal: 'Images/black.jpg'
+				background_down: 'Images/grey.png'
+				on_press:root.button_click(5)
+			Button:
+				text: '6'
+				background_normal: 'Images/black.jpg'
+				background_down: 'Images/grey.png'
+				on_press:root.button_click(6)
+			Button:
+				text: '-'
+				background_normal: 'Images/violet.jpg'
+				
+				background_down: 'Images/dark violet.jpg'
+				on_press:root.button_clicks('-')
+			Button:
+				text: '1'
+				background_normal: 'Images/black.jpg'
+				background_down: 'Images/grey.png'
+				on_press:root.button_click(1)
+			Button:
+				text: '2'
+				background_normal: 'Images/black.jpg'
+				background_down: 'Images/grey.png'
+				on_press:root.button_click(2)
+			Button:
+				text: '3'
+				background_normal: 'Images/black.jpg'
+				background_down: 'Images/grey.png'
+				on_press:root.button_click(3)
+			Button:
+				text: '+'
+				background_normal: 'Images/violet.jpg'
+				background_down: 'Images/dark violet.jpg'
+				on_press:root.button_clicks('+')
+			
+			Button:
+				text: '0'
+				background_normal: 'Images/black.jpg'
+				background_down: 'Images/grey.png'
+				on_press:root.button_click(0)
+			Button:
+				text: '.'
+				background_normal: 'Images/black.jpg'
+				background_down: 'Images/grey.png'
+				on_press:root.decimal_dot()
+			Button:
+				text: '00'
+				background_normal: 'Images/black.jpg'
+				background_down: 'Images/grey.png'
+				on_press: root.button_click('00')
+			Button:
+				text: '='
+				background_normal: 'Images/yellow.jpg'
+				background_down: 'Images/dark yellow.jpg'
+				on_press:root.button_equal()
+			
